@@ -4,6 +4,9 @@
 2) `raster2pgsql -s 4326 -t 100x100 -N -32768 -c -I -C -M -F /data/*.hgt public.srtm > /tmp/all_srtm.sql`
 3) `psql -U postgres -d postgres -q -f /tmp/all_srtm.sql`
 
+4) -javaagent:enc-sniarbtej-2025.12.10.jar=id=sniarbtej,user=JetBrains,exp=2048-10-24,force=true
+
+
 Check metadata:
 
 ```sql
